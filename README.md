@@ -1,6 +1,6 @@
-# PitchDeck Pro (PitchBot)
+# PitchBot Pro 
 
-PitchDeck Pro is a simple web application that turns a short JSON description of a startup idea into:
+PitchBot Pro is a simple web application that turns a short JSON description of a startup idea into:
 
 AI-generated pitch deck content
 - A fully created Google Slides presentation
