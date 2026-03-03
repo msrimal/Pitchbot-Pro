@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PitchDeck Pro</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <span>PitchDeck Pro</span>
+      </div>
+      <nav class="links">
+        <a class="active" href="#">Home</a>
+        <a href="#create">Create</a>
+        <a href="#how">How It Works</a>
+      </nav>
+      <a class="btn btn-dark" href="#create">Get Started</a>
+    </header>
+
+    <main class="hero">
+      <div class="pill">⚡ AI-Powered Pitch Decks</div>
+
+      <h1>
+        Transform Your Startup Ideas Into<br />
+        <span class="accent">Winning Presentations</span>
+      </h1>
+
+      <p class="sub">
+        PitchDeck Pro helps entrepreneurs and startups create professional,<br />
+        investor-ready presentations in minutes. No design skills required—just your vision.
+      </p>
+
+      <div class="cta">
+        <a class="btn btn-dark" href="#create">Start Creating</a>
+        <a class="btn btn-light" href="#how">Learn More</a>
+      </div>
+    </main>
+
+    <section id="create" class="panel">
+      <div class="panel-inner">
+        <h2>Create Your Deck</h2>
+        <p>Paste your JSON below and click Generate.</p>
+
+        <textarea id="jsonInput" spellcheck="false">
+{
+  "problem": "Teams waste time writing daily updates.",
+  "solution-idea": "Auto-generate summary emails from bullet points.",
+  "tone": "Professional, concise",
+  "audience": "Internal teams and managers"
+}
+        </textarea>
+
+        <div class="row">
+          <button id="generateBtn" class="btn btn-dark">Generate Slides</button>
+          <span id="status" class="status"></span>
+        </div>
+
+        <div id="result" class="result"></div>
+      </div>
+    </section>
+
+    <section id="how" class="panel">
+      <div class="panel-inner">
+        <h2>How It Works</h2>
+        <ol>
+          <li>Paste JSON describing your idea.</li>
+          <li>We generate pitch sections with AI.</li>
+          <li>We create a Google Slides deck and return a link.</li>
+        </ol>
+      </div>
+    </section>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
