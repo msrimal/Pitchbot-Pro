@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create • PitchBot Pro</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <span>PitchBot Pro</span>
+    </div>
+
+    <nav class="links">
+      <a href="/">Home</a>
+      <a class="active" href="/create">Create</a>
+      <a href="/how-it-works">How It Works</a>
+    </nav>
+
+    <a class="btn btn-dark" href="/create">Get Started</a>
+  </header>
+
+  <main class="create-hero">
+    <div class="create-hero-inner">
+      <h1>Start Creating Your Pitch Deck</h1>
+      <p>Answer a few questions and let our AI assistant do the rest!</p>
+    </div>
+
+    <div class="create-form">
+      <form id="pitch-form">
+        <h4>Hint: The more details you provide, the better your pitch deck will be!</h4>
+
+
+        <div class="form-group">
+          <label for="problem">Enter the problem you're solving</label>
+          <input type="text" id="problem" placeholder="e.g. College students waste hours searching for affordable, healthy meals near campus" required />
+        </div>
+
+        <div class="form-group">
+          <label for="solution">Describe your proposed solution</label>
+          <input type="text" id="solution" placeholder="e.g. An app that aggregates local restaurant deals and meal-prep recipes based on dietary preferences and budget" required />
+        </div>
+
+        <div class="form-group">
+          <label for="audience">Who is your target audience?</label>
+          <input type="text" id="audience" placeholder="e.g. College students aged 18-24 living on or near campus" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tone">What is the tone of your pitch?</label>
+          <input type="text" id="tone" placeholder="e.g. Casual and energetic, with a focus on convenience and savings" required />
+        </div>
+
+        <div class="row">
+          <button type="submit" id="generateBtn" class="btn btn-dark">
+            Generate Pitch Deck
+          </button>
+          <span id="status" class="status"></span>
+        </div>
+
+        <div id="result" class="result"></div>
+
+      </form>
+    </div>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
