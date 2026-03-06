@@ -95,7 +95,7 @@ def populate_title_slide(service, presentation_id, startup_name):
             "insertText": {
                 "objectId": shapes[1]['objectId'],
                 "insertionIndex": 0,
-                "text": "Powered by PitchBot"
+                "text": "Powered by PitchBot Pro"
             }
         })
     if requests:
