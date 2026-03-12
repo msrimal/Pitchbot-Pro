@@ -64,7 +64,7 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  // IMPORTANT: payload keys MUST match what your backend expects
+  // IMPORTANT: payload keys MUST match what backend expects
   const payload = {
     problem,
     "solution-idea": solution,
